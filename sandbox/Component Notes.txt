@@ -1,0 +1,36 @@
+MXP file (Macromedia eXtensions Package)
+
+Props Set by IDE
+_targetInstanceName == scrollTargetName : Target component dropped on
+(AS2) _livePreviewMask
+(AS2) onUpdate // Dreamweaver Flashlet _root.flashlet _global.isLivePreview = true;
+setSize(w:Number,h:Number):void
+
+$LOCAL_CONFIG = c:\Documents and Settings\{user}\Local Settings\Application Data\Adobe\Flash CS3\{language}\Configuration\
+$LOCAL_CONFIG (Vista) = c:\Users\{user}\Local Settings\Application Data\Adobe\Flash CS3\{language}\Configuration\
+Component Location: $LOCAL_CONFIG/Components
+MXI of Installed Extensions: $LOCAL_CONFIG/Extensions/
+Custom JSFL: $LOCAL_CONFIG/Commands/
+	Put any .JSFL or .XML files in here. 
+	Don’t create or put them in any sub-folders or Flash won’t find them.
+Unicode ranges for font embedding(xml): $LOCAL_CONFIG/FontEmbedding/
+Breakpoints for debugging (xml): $LOCAL_CONFIG/Debugger/AsBreakpoints.xml
+Custom Actions: $LOCAL_CONFIG/ActionsPanel/ActionScript_3/CustomActions
+Custom Actions: $LOCAL_CONFIG/ActionsPanel/ActionScript_1_2/CustomActions
+Custom Tools: $LOCAL_CONFIG/Tools
+	A new tool (like lasso or paintbrush)
+Custom External Libraries (.dll) : $LOCAL_CONFIG/External Libraries
+	For DLLs that the extension might use (or command)
+	The C-level extensibility mechanism was introduced in Macromedia Flash MX 2004, and did not change in Flash 8. 
+	The only revision in Flash CS3 is a change in the mm_jsapi.h file included in the sample DMG or ZIP file (see Sample DLL implementation).
+
+For example, you might want to define a function that performs intense calculations more efficiently than JavaScript does, which improves performance, or when you want to create more advanced tools or effects.
+Custom Web Services (For AS1 and 2 only): $LOCAL_CONFIG/WebServices
+	Where WebService extensions live
+
+Help: $LOCAL_CONFIG/HelpPanel/Help/ http://www.adobe.com/support/documentation/en/flash/mx2004/extending_help/
+
+Custom Panels: $LOCAL_CONFIG/WindowSWF
+	Use JSFL to control the IDE from the panel
+	Call MMExecute to run the JSFL
+var isLivePreview:Boolean = (parent != null && getQualifiedClassName(parent) == "fl.livepreview::LivePreviewParent");
